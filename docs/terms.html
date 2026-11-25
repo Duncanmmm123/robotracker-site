@@ -19,7 +19,7 @@
       <nav class="nav" aria-label="Main navigation">
         <a href="./#setup">Setup</a><a href="https://discord.gg/475THD4ftT">Support</a>
         <a href="privacy.html">Privacy</a><a href="terms.html" aria-current="page">Terms</a>
-        <a class="button small" href="https://discord.com/oauth2/authorize?client_id=1561527919375814709&amp;permissions=268823568&amp;scope=bot%20applications.commands&amp;integration_type=0">Add to Discord</a>
+        <a class="button small" href="https://discord.com/oauth2/authorize?client_id=1561527919375814709&amp;permissions=268823568&amp;scope=bot%20applications.commands&amp;integration_type=0" aria-label="Add RoboTracker to Discord"><img src="assets/discord.svg" alt="" width="20" height="20">Add</a>
       </nav>
     </div>
   </header>
@@ -33,7 +33,7 @@
   </div>
 </section>
 <div class="wrap policy-layout">
-  <nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#service">The service</a><a href="#eligibility">Who may install and use RT</a><a href="#acceptable-use">Acceptable use</a><a href="#permissions">Server permissions and alert controls</a><a href="#accuracy">Alert timing and accuracy</a><a href="#privacy">Privacy and removing a profile</a><a href="#changes">Changes, restrictions, and removal</a><a href="#availability">Third-party services and legal rights</a><a href="#contact">Contact the RoboTracker team</a></nav>
+  <nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#service">The service</a><a href="#eligibility">Who may install and use RT</a><a href="#acceptable-use">Acceptable use</a><a href="#permissions">Server permissions and alert controls</a><a href="#accuracy">Alert timing and accuracy</a><a href="#privacy">Privacy and removing a profile</a><a href="#changes">Changes, restrictions, and removal</a><a href="#availability">Third-party services and legal rights</a><a href="#configuration">Set up trackers responsibly</a><a href="#visibility">Sharing alerts outside your server</a><a href="#third-party-limits">What Roblox and Discord control</a><a href="#moderation">Handling misuse and outages</a><a href="#stop">Stopping tracking and leaving a server</a><a href="#contact">Contact the RoboTracker team</a></nav>
   <article class="policy" aria-label="Terms of Service"><section id="service"><h2>The service</h2>
 <p>RoboTracker (RT) is an independent application that observes supported public Roblox profile changes and can deliver alerts in Discord. These terms apply to the RoboTracker bot and this website. By installing or using RT, you agree to follow the rules below and the applicable rules of Discord and Roblox.</p>
 <p>RoboTracker is independently operated and has no affiliation with or endorsement from Roblox or Discord. Availability and visibility can differ by profile, server, location, endpoint, and over time.</p>
@@ -72,6 +72,36 @@
 <section id="availability"><h2>Third-party services and legal rights</h2>
 <p>Discord, Roblox, and GitHub operate independently. Their terms govern your use of those services. To the extent permitted by applicable law, RoboTracker is provided as available, without a promise of uninterrupted operation, completeness, or fitness for a particular purpose. Nothing here limits rights or remedies that applicable law gives you and does not allow you to waive.</p>
 <p><a href="https://discord.com/terms">Discord Terms of Service</a> · <a href="https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use">Roblox Terms of Use</a></p>
+</section>
+<section id="configuration"><h2>Set up trackers responsibly</h2>
+
+<p>Before adding a profile, decide why your server needs the tracker and which alerts are necessary. A server that only needs in-game notifications can leave unrelated signals off. Limit recipients to members who need the alerts, and remove access when someone leaves a team or no longer needs it. Review who can see a channel whenever server roles or channel permissions change.</p>
+<p>When inviting RT, check the application name and read Discord’s authorization screen. If a command reports missing permissions, restore only the access needed for the feature or ask a server administrator to review the issue. Avoid granting broad roles solely to work around a configuration error.</p>
+
+</section>
+<section id="visibility"><h2>Sharing alerts outside your server</h2>
+
+<p>Roblox information can be public while a Discord alert about it is still sensitive. Keep alerts and tracker history within the audience that needs them. Before sharing a screenshot or exporting details, consider whether it exposes someone’s activity, usernames, or relationships to people who would otherwise have no reason to see them.</p>
+<p>Do not use alert history to build a dossier, compile public lists of monitored people without authorization, or direct unwanted messages at someone. These rules apply to copied and forwarded alerts as well as messages read directly in Discord.</p>
+
+</section>
+<section id="third-party-limits"><h2>What Roblox and Discord control</h2>
+
+<p>Roblox determines which profile fields are publicly available and whether a game or friend list can be shown. A signed-in Roblox session can provide a different view. Changes to a platform can affect coverage, behavior, or the commands available in a given server. RT respects the responses and access those services provide.</p>
+<p>Discord controls availability of the authorization window, delivery of messages, eligibility to install apps, and access through each server’s permissions. A working tracker and an accessible channel do not guarantee a device notification. A recipient’s settings, channel mute, or the platform’s delivery rules can affect whether a notification shows.</p>
+
+</section>
+<section id="moderation"><h2>Handling misuse and outages</h2>
+
+<p>If a tracker is being used against someone, pause or remove the tracker if you have permission, then use a private ticket to report what happened. Include a link to an RT message, an affected Roblox profile ID, and enough context for staff to understand the issue. Keep the material out of public channels when it could expose private information.</p>
+<p>The team may ask for more context, restrict a tracker or installation, or direct an issue to the platform that controls the relevant feature. The team cannot restore someone’s Roblox or Discord account or undo actions by a server moderator. Use the platform’s reporting tools when the problem concerns that platform’s account or safety rules.</p>
+
+</section>
+<section id="stop"><h2>Stopping tracking and leaving a server</h2>
+
+<p>Use <code>/tracker pause</code> when you want to stop checks temporarily, or <code>/untrack-account</code> when you want to remove the server’s tracker. Server alert delivery can also be disabled separately. Review the relevant confirmation before making a change, especially if the command offers to remove a tracker channel.</p>
+<p>If you are the owner of a Roblox profile and want RT to stop tracking it across installations, follow the <a href="privacy.html#requests">verified removal process</a>. You can still contact the team even if you have never added the bot. Leaving a Discord server does not by itself start a Roblox profile-removal request.</p>
+
 </section>
 <section id="contact"><h2>Contact the RoboTracker team</h2>
 <p>Join <a href="https://discord.gg/475THD4ftT">RoboTracker Support</a> and open a ticket in <code>#ticket-system</code> for a bug, suggestion, terms question, or report of misuse. Check <code>#bot-downstatus</code> if you’re reporting an outage.</p>

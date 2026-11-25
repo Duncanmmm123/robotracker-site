@@ -19,7 +19,7 @@
       <nav class="nav" aria-label="Main navigation">
         <a href="./#setup">Setup</a><a href="https://discord.gg/475THD4ftT">Support</a>
         <a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a>
-        <a class="button small" href="https://discord.com/oauth2/authorize?client_id=1561527919375814709&amp;permissions=268823568&amp;scope=bot%20applications.commands&amp;integration_type=0">Add to Discord</a>
+        <a class="button small" href="https://discord.com/oauth2/authorize?client_id=1561527919375814709&amp;permissions=268823568&amp;scope=bot%20applications.commands&amp;integration_type=0" aria-label="Add RoboTracker to Discord"><img src="assets/discord.svg" alt="" width="20" height="20">Add</a>
       </nav>
     </div>
   </header>
@@ -33,7 +33,7 @@
   </div>
 </section>
 <div class="wrap policy-layout">
-  <nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#scope">Who this covers</a><a href="#data">Information RoboTracker handles</a><a href="#use">How we use the information</a><a href="#visibility">Who can see tracker data</a><a href="#processors">Hosting and service providers</a><a href="#retention">Retention and copies</a><a href="#requests">Request removal or ask about your data</a><a href="#safety">Younger users and security</a><a href="#changes">Changes and contact</a></nav>
+  <nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#scope">Who this covers</a><a href="#data">Information RoboTracker handles</a><a href="#use">How we use the information</a><a href="#visibility">Who can see tracker data</a><a href="#processors">Hosting and service providers</a><a href="#retention">Retention and copies</a><a href="#requests">Request removal or ask about your data</a><a href="#safety">Younger users and security</a><a href="#inputs">What comes from you, a server, or Roblox</a><a href="#observations">Live checks, snapshots, and alerts</a><a href="#verification">What happens during verification</a><a href="#deletion-outcomes">What to expect after a deletion request</a><a href="#support-details">What to include in a private ticket</a><a href="#changes">Changes and contact</a></nav>
   <article class="policy" aria-label="Privacy Policy"><section id="scope"><h2>Who this covers</h2>
 <p>This policy covers the RoboTracker Discord application, the RoboTracker support server workflows described here, and this website. The RoboTracker team operates the bot independently. Discord, Roblox, and GitHub operate their own services under their own policies.</p>
 <p>A member with the required Discord permissions chooses the Roblox profile to monitor. A profile may be monitored even when its Roblox account holder has never interacted with the bot. Publicly accessible profile information can still be personal information.</p>
@@ -76,6 +76,36 @@
 <section id="safety"><h2>Younger users and security</h2>
 <p>RT does not ask for age or independently confirm parental consent. Servers should use tracking responsibly and follow applicable rules for children’s data. Parents and authorized guardians can contact support for assistance with a request.</p>
 <p>RT uses permission checks, restricted responses, mention allow-lists, and hashed verification codes to reduce exposure. These controls depend in part on server settings and services outside the team’s control. If you suspect unintended access or a misplaced alert, report it in a private support ticket and include only the relevant message link or details.</p>
+</section>
+<section id="inputs"><h2>What comes from you, a server, or Roblox</h2>
+
+<p>Installing the bot supplies a Discord server context. Adding a tracker supplies a username or ID and the choices made in setup. Roblox returns the profile that matches the account lookup and the public data available for that profile. The account holder does not need to sign in to this site or authorize their Roblox account for a server to add the profile.</p>
+<p>Server managers may change permissions or choose to share an alert. Those actions are under their control. If you see a private alert copied elsewhere, tell the moderators where it was reposted. If the underlying tracker is also a concern, use the removal workflow or contact RoboTracker Support.</p>
+
+</section>
+<section id="observations"><h2>Live checks, snapshots, and alerts</h2>
+
+<p>A snapshot is the information returned during an earlier check. RoboTracker saves snapshots so it can compare them with later observations. A change may result in an alert and a history item. A history item can describe an older state even after the live profile changes. Saved activity and current public presence have different meanings.</p>
+<p>An API can return incomplete or stale information. This is especially relevant for friends, inventories, badges, game details, and session duration. RT can show that a value is unavailable, omit an alert, or retain an older observation. For a correction request, tell us which tracker or message showed the disputed information and what part looks wrong.</p>
+
+</section>
+<section id="verification"><h2>What happens during verification</h2>
+
+<p>RT issues a code tied to a request and checks whether the code appears in the Roblox profile description. It does not ask you to grant account access, sign in through a third-party form, or change your password. Use only the code shown privately inside the verified RoboTracker bot response. The team does not need a screenshot of your Roblox security settings.</p>
+<p>If your request expires or the check cannot reach Roblox, follow the message shown by the bot. A successful check and the team’s decision are separate steps. If you can’t edit the profile, are acting for someone else, or need another way to explain your request, ask support privately. Provide enough context to locate the account and avoid posting details in public chat.</p>
+
+</section>
+<section id="deletion-outcomes"><h2>What to expect after a deletion request</h2>
+
+<p>Untracking stops one tracker in one Discord server. An approved profile-removal request is intended to remove that Roblox profile from tracking across RT’s servers and block it from being added again. Related Discord cleanup depends on the bot being able to reach the affected channels and messages. A blocked profile can still be visible directly on Roblox.</p>
+<p>If an alert remains after a request is approved, send the message link privately so staff can check whether the bot can still access and remove it. Platform backups, copies saved by others, and content maintained by another service are governed separately.</p>
+
+</section>
+<section id="support-details"><h2>What to include in a private ticket</h2>
+
+<p>For a privacy question or correction, include your Roblox profile link or ID and a short description of what you’re asking for. If an issue concerns a Discord message, include its link when you can do so safely. Tell staff if you cannot use the automated command or if you are contacting them on behalf of another person.</p>
+<p>Information in a ticket remains subject to Discord’s channel permissions and data handling. Avoid attaching identity documents, credentials, or unrelated conversation history. Depending on where you live, you may have rights to ask about access, correction, removal, or use of your personal information. Private support is the contact route for those requests.</p>
+
 </section>
 <section id="changes"><h2>Changes and contact</h2>
 <p>We update this page when how the website or bot handles data changes. The date above identifies this version. For privacy questions, removal help, or reports of misuse, contact the team through <a href="https://discord.gg/475THD4ftT">RoboTracker Support</a> and use <code>#ticket-system</code>.</p>
