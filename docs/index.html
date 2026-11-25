@@ -17,82 +17,90 @@
     <div class="wrap top">
       <a class="brand" href="./"><img src="assets/rt-logo.webp" alt="" width="34" height="34">RoboTracker</a>
       <nav class="nav" aria-label="Main navigation">
-        <a href="./#setup">Setup</a><a href="https://discord.gg/475THD4ftT">Support</a>
-        <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
+        <a href="./#features">Features</a>
+        <a href="./#commands">Commands</a>
+        <a href="./#setup">Setup</a>
+        <a href="https://discord.gg/475THD4ftT">Support</a>
         <a class="button small" href="https://discord.com/oauth2/authorize?client_id=1561527919375814709&amp;permissions=268823568&amp;scope=bot%20applications.commands&amp;integration_type=0" aria-label="Add RoboTracker to Discord"><img src="assets/discord.svg" alt="" width="20" height="20">Add</a>
       </nav>
     </div>
   </header>
   <main id="main">
-    
-<section class="hero">
-  <div class="wrap hero-inner">
-    <div class="hero-copy">
-      <p class="eyebrow">RoboTracker for Discord</p>
-      <h1>Roblox activity.<span>In your server.</span></h1>
-      <p>Get Discord alerts when a Roblox profile you track goes online, joins a game, or updates its avatar. Pick which changes to follow.</p>
-      <div class="actions"><a class="button" href="https://discord.com/oauth2/authorize?client_id=1561527919375814709&amp;permissions=268823568&amp;scope=bot%20applications.commands&amp;integration_type=0" aria-label="Add RoboTracker to Discord"><img src="assets/discord.svg" alt="" width="20" height="20">Add</a><a class="button secondary" href="#setup">Setup guide</a></div>
-      <small class="fine">Install in a Discord server you manage. No Roblox login required.</small>
-    </div>
-    <div class="hero-mark">
-      <span class="logo-orbit" aria-hidden="true"></span>
-      <span class="logo-orbit inner" aria-hidden="true"></span>
-      <img src="assets/rt-logo.webp" alt="White RoboTracker logo on blue" width="256" height="256" fetchpriority="high">
-    </div>
-  </div>
-</section>
-<section class="section" id="features">
-  <div class="wrap">
-    <div class="section-head"><div><h2>What you can track</h2><p>Pick the alerts you want for each Roblox account.</p></div></div>
-    <div class="feature-grid">
-      <article class="feature"><h3>Activity and experiences</h3><p>See public online, offline, Studio, and in-game changes. Experience names and links appear when available.</p></article>
-      <article class="feature"><h3>Profile and avatar changes</h3><p>Follow public name, bio, and avatar updates. Some avatar alerts include a before-and-after preview.</p></article>
-      <article class="feature"><h3>Friends and collections</h3><p>Browse the public data Roblox returns. Names in friend alerts require a complete list. Counts can still be available on their own.</p></article>
-      <article class="feature"><h3>Alert history</h3><p>Browse recorded changes for an account and see what RoboTracker observed on earlier checks.</p></article>
-      <article class="feature"><h3>Recipient controls</h3><p>Choose who gets pinged and set a cooldown. Tracker channels are created with private access settings.</p></article>
-      <article class="feature"><h3>Profile removal</h3><p>Roblox account holders can verify control and ask the RoboTracker team to review a data-removal request.</p></article>
-    </div>
-  </div>
-</section>
-<section class="section" id="setup">
-  <div class="wrap">
-    <div class="section-head"><div><h2>Set up your first tracker</h2><p>Start in the Discord server where you want alerts delivered.</p></div></div>
-    <div class="setup-grid">
-      <ol class="steps">
-        <li><strong>Install RoboTracker.</strong> Use <a href="https://discord.com/oauth2/authorize?client_id=1561527919375814709&amp;permissions=268823568&amp;scope=bot%20applications.commands&amp;integration_type=0">Add to Discord</a>, pick a server you manage, and review the permissions.</li>
-        <li><strong>Run <code>/setup</code>.</strong> Check channel permissions and follow the setup prompts.</li>
-        <li><strong>Run <code>/track-account</code>.</strong> Enter a Roblox username or ID, confirm the profile, and select what to monitor.</li>
-        <li><strong>Choose who gets alerts.</strong> Open <code>/alerts settings</code> and review recipients under <code>/alerts recipients list</code>.</li>
-      </ol>
-      <dl class="command-list" aria-label="Useful commands">
-        <div><dt><code>/track-info</code></dt><dd>Browse profile details and available data.</dd></div>
-        <div><dt><code>/user-history</code></dt><dd>See saved changes for a tracked account.</dd></div>
-        <div><dt><code>/settings</code></dt><dd>Manage account and server alert settings.</dd></div>
-        <div><dt><code>/status</code></dt><dd>Check monitors, sample coverage, and alert routes.</dd></div>
-        <div><dt><code>/rebuild-channel</code></dt><dd>Repair a tracker channel that’s missing or inaccessible.</dd></div>
-        <div><dt><code>/untrack-account</code></dt><dd>Stop monitoring an account in your server.</dd></div>
-      </dl>
-    </div>
-  </div>
-</section>
-<section class="section" id="faq">
-  <div class="wrap">
-    <div class="section-head"><h2>Common questions</h2></div>
-    <div class="faq">
-      <details><summary>Why is a friend list or game missing?</summary><p>Roblox can return a count without names or a presence state without game details. RoboTracker displays the information the API actually provides. Your signed-in Roblox view may show more.</p></details>
-      <details><summary>Why didn’t I get an alert immediately?</summary><p>The first check establishes a baseline. Later alerts depend on Roblox samples, your settings and cooldown, and Discord delivery. Check <code>/status</code> and confirm the tracker channel is reachable.</p></details>
-      <details><summary>Do I need to give RT administrator access?</summary><p>Administrator access is unnecessary for the default install. The bot needs permissions including Manage Channels and Manage Roles to create and configure tracker channels. Review channel access after setup.</p></details>
-      <details><summary>How do I remove my data or report misuse?</summary><p>Run <code>/privacy remove</code> in a server where tracker commands are enabled, then follow the profile verification steps. If you can’t access the command or you’re reporting misuse, open a private support ticket. See the <a href="privacy.html#requests">removal guide</a>.</p></details>
-    </div>
-  </div>
-</section>
-<section class="section" id="support">
-  <div class="wrap bottom-grid">
-    <article class="support-panel"><h2>Get help in Discord</h2><p>Open a private ticket in <code>#ticket-system</code> for bugs, setup help, or feature suggestions. Check <code>#bot-downstatus</code> for service updates and <code>#bot-updatelog</code> for release notes.</p><div class="actions"><a class="button" href="https://discord.gg/475THD4ftT">Join RoboTracker Support</a></div></article>
-    <article class="support-panel"><h2>Privacy and terms</h2><p>See what RoboTracker stores, who can access it, how to request removal, and the rules for using the bot.</p><div class="actions"><a class="button secondary" href="privacy.html">Privacy Policy</a><a class="button secondary" href="terms.html">Terms of Service</a></div></article>
-  </div>
-</section>
 
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <img class="hero-logo" src="assets/rt-logo.webp" alt="" width="120" height="120" fetchpriority="high">
+        <h1 id="hero-title">Roblox alerts<br>for your Discord server.</h1>
+        <p>Follow public activity, profile changes, and avatars. Pick what to track and who gets pinged.</p>
+        <div class="actions">
+          <a class="button" href="https://discord.com/oauth2/authorize?client_id=1561527919375814709&amp;permissions=268823568&amp;scope=bot%20applications.commands&amp;integration_type=0" aria-label="Add RoboTracker to Discord"><img src="assets/discord.svg" alt="" width="22" height="22">Add</a>
+          <a class="button secondary" href="#setup">Setup guide</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap split" id="features" aria-labelledby="features-title">
+      <div class="section-intro">
+        <h2 id="features-title">What RT tracks</h2>
+        <p>Choose which changes to follow for each profile.</p>
+      </div>
+      <dl class="rows">
+        <div><dt>Activity</dt><dd>Online, offline, in-game, and Studio changes. Game details and links appear when Roblox returns them.</dd></div>
+        <div><dt>Profiles</dt><dd>Changes to names, bios, and avatars. Some avatar alerts include a before-and-after preview.</dd></div>
+        <div><dt>Friends and collections</dt><dd>See available badges, outfits, and public friend data. Named friend alerts need a complete list from Roblox.</dd></div>
+        <div><dt>Alerts and history</dt><dd>Choose recipients and cooldowns, and browse saved changes. RT sets up tracker channels with restricted access.</dd></div>
+      </dl>
+    </section>
+
+    <section class="section surface" id="setup" aria-labelledby="setup-title">
+      <div class="wrap split">
+        <div class="section-intro">
+          <h2 id="setup-title">Set up a tracker</h2>
+          <p>You’ll need permission to manage the Discord server where you want alerts.</p>
+        </div>
+        <ol class="steps">
+          <li><h3><a href="https://discord.com/oauth2/authorize?client_id=1561527919375814709&amp;permissions=268823568&amp;scope=bot%20applications.commands&amp;integration_type=0">Add RoboTracker</a></h3><p>Pick your server in Discord and review the requested permissions.</p></li>
+          <li><h3>Run <code>/setup</code></h3><p>Check that RT can create and configure tracker channels.</p></li>
+          <li><h3>Run <code>/track-account</code></h3><p>Enter a Roblox username or ID, confirm the profile, and choose what to follow.</p></li>
+          <li><h3>Set your alerts</h3><p>Use <code>/alerts settings</code> to adjust delivery and <code>/alerts recipients list</code> to see who gets pinged.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section wrap split" id="commands" aria-labelledby="commands-title">
+      <div class="section-intro">
+        <h2 id="commands-title">Commands</h2>
+        <p>Open <code>/help</code> in Discord for the full list.</p>
+      </div>
+      <dl class="rows commands">
+        <div><dt><code>/track-info</code></dt><dd>Browse the profile and available public data.</dd></div>
+        <div><dt><code>/user-history</code></dt><dd>Read saved changes for a tracked account.</dd></div>
+        <div><dt><code>/settings</code></dt><dd>Manage account settings and server defaults.</dd></div>
+        <div><dt><code>/status</code></dt><dd>Check tracker coverage and alert delivery.</dd></div>
+        <div><dt><code>/rebuild-channel</code></dt><dd>Repair a missing or inaccessible tracker channel.</dd></div>
+        <div><dt><code>/untrack-account</code></dt><dd>Stop tracking an account in your server.</dd></div>
+      </dl>
+    </section>
+
+    <section class="section surface" id="faq" aria-labelledby="faq-title">
+      <div class="wrap split">
+        <div class="section-intro"><h2 id="faq-title">Common questions</h2></div>
+        <div class="faq">
+          <details><summary>Why is a friend list or game missing?</summary><p>Roblox sometimes sends only a friend count or a presence status. Your signed-in Roblox view may show details the public API leaves out.</p></details>
+          <details><summary>Why didn’t I get an alert right away?</summary><p>The first check gives RT a starting point. Later alerts depend on Roblox responding, the tracker’s cooldown, and whether RT can send to the Discord channel.</p></details>
+          <details><summary>Does RT need Administrator?</summary><p>The install requests specific permissions, including Manage Channels and Manage Roles for tracker setup. Review the channel’s access after setup.</p></details>
+          <details><summary>How do I remove my profile?</summary><p>Start with <code>/privacy remove</code> in a server that has RT or use the <a href="privacy.html#requests">removal guide</a>. For help or to report misuse, open a private support ticket.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap support" id="support" aria-labelledby="support-title">
+      <div class="section-intro">
+        <h2 id="support-title">Need a hand?</h2>
+        <p>Open a private ticket in <code>#ticket-system</code>. For an outage or a release note, check <code>#bot-downstatus</code> or <code>#bot-updatelog</code>.</p>
+      </div>
+      <a class="button secondary" href="https://discord.gg/475THD4ftT">Join the support server</a>
+    </section>
   </main>
   <footer class="site-footer">
     <div class="wrap foot">
